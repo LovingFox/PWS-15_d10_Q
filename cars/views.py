@@ -13,8 +13,11 @@ class CarListView(FormMixin, ListView):
     def get_queryset(self):
         queryset = super().get_queryset()
         self.form = CarForm(self.request.GET)
-        filters = Car.get_filter(self.request.GET)
-        return queryset.filter(filters)
+        if self.form.is_valid():
+            filters = Car.get_filter(self.request.GET)
+            return queryset.filter(filters)
+        else:
+            return queryset
 
     def get_context_data(self):
         context = super().get_context_data()
