@@ -28,6 +28,11 @@ $ env\Scripts\activate.bat
 $ pip install -r requirements.txt
 ```
 
+  - создать структуру базы данных
+```
+$ python manage.py migrate
+```
+
   - загрузить фикстуры в качестве примеров
 ```
 $ python manage.py loaddata data.json
