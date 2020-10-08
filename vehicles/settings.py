@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY', 'u1h4bzm+cdovkpv^&!z$3*7l&p5mt$aap+u^_
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['sf.rtru.tk']
 
 DEBUG_TOOLBAR_CONFIG = {
     'SHOW_TOOLBAR_CALLBACK': lambda r: True,
