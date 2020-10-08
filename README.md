@@ -5,6 +5,7 @@ https://sf.rtru.tk
 
 ### Реализовано
 - Django приложение, запущенное через gunicorn на сокете 127.0.0.0:8000
+  - все критичные данные спрятаны в enviroment
 - Описание самого приложения см. тут: https://github.com/LovingFox/PWS-15_d10_Q
 - Web-сервер nginx (см. файл [sf.rtru.tk.conf](https://github.com/LovingFox/PWS-15_d10_Q/blob/e5/sf.rtru.tk.conf)):
   - http -> https
