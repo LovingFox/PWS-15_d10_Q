@@ -11,5 +11,6 @@ https://sf.rtru.tk
   - / -> proxy_pass 127.0.0.0:8000 (proxy_set_header, proxy_set_header)
   - /static -> директория с собранными (collectstatic) статическими файлами
   - /favicon.ico { access_log off; log_not_found off; }
+- Локальный PostgreSQL сервер
 - Домен через freenom.com
 - SSL сертификат через letsencrypt.org
